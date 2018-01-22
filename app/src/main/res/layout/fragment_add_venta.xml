@@ -1,0 +1,1736 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="marcespal.sifal.fragments.AddVentaFragment">
+
+    <ProgressBar
+        android:id="@+id/Progreso"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Cliente" />
+
+        <Spinner
+            android:id="@+id/listCliente"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="N° Factura" />
+
+            <EditText
+                android:id="@+id/etFactura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant19"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU19"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT19"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant22"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU22"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT22"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant23"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU23"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT23"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant24"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU24"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT24"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant26"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU26"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT26"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP27"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant27"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU27"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT27"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameP28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Producto"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etCant28"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:hint="Cantidad"
+                            android:inputType="number"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostU28"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Unitario"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvCostT28"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Costo Total" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btCotizar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:text="Cotizar" />
+
+                    <TextView
+                        android:id="@+id/tvTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_weight="1"
+                        android:text="TOTAL"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/background_dark"
+                    android:textStyle="bold"
+                    android:text="Observación" />
+
+                <EditText
+                    android:id="@+id/etObserVenta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/background_dark"
+                    android:textStyle="bold"
+                    android:hint="Ingrese observación de venta" />
+
+                <Button
+                    android:id="@+id/btVender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/background_dark"
+                    android:textStyle="bold"
+                    android:text="Realizar Venta" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
